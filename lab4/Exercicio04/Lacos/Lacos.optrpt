@@ -1,0 +1,170 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: main()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Lacos.c(5,3) inlined into Lacos.c(64,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(67,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(67,22)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(68,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(69,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(70,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(25,3) inlined into Lacos.c(72,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(25,3) inlined into Lacos.c(72,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(31,3) inlined into Lacos.c(72,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(31,3) inlined into Lacos.c(72,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(75,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(75,22)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(76,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(77,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(78,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(5,3) inlined into Lacos.c(80,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(83,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(83,22)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(84,23)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(41,3) inlined into Lacos.c(86,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(41,3) inlined into Lacos.c(86,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(89,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(89,22)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3) inlined into Lacos.c(90,22)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: Soma(const int, const int, float *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Lacos.c(20,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(20,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: Laco1(float *__restrict__, float *__restrict__, float *__restrict__, float *__restrict__, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Lacos.c(25,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(25,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Lacos.c(31,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(31,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: Laco2(float *__restrict__, float *__restrict__, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Lacos.c(41,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Lacos.c(41,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: Init(float *__restrict__, float *__restrict__, float *__restrict__, float *__restrict__, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Lacos.c(5,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

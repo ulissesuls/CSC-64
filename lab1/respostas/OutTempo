@@ -1,0 +1,7 @@
+tam=8; tempo comp=0.000020 
+tam=16; tempo comp=0.000178 
+tam=32; tempo comp=0.001576 
+tam=64; tempo comp=0.012339 
+tam=128; tempo comp=0.100733 
+tam=256; tempo comp=0.815215 
+tam=512; tempo comp=6.553873 

@@ -1,0 +1,202 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: CalorEscalar..0(const int, const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(23,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between b[i][j] (26:2) and b[i][j] (26:2)
+
+   LOOP BEGIN at Calor.c(25,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between b[i][j] (26:2) and b[i][j-1] (26:2)
+
+      LOOP BEGIN at Calor.c(24,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b[i][j] (26:2) and b[i-1][j] (26:2)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CalorVetorial..0(const int, const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(42,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at Calor.c(43,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at Calor.c(51,7)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at Calor.c(51,7)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MaxDif..0(const int, float (*)[*], float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(74,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between res (76:11) and res (76:7)
+
+   LOOP BEGIN at Calor.c(75,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between res (76:11) and res (76:7)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CalorEscalar(const int, const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(23,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between b[i][j] (26:2) and b[i][j] (26:2)
+
+   LOOP BEGIN at Calor.c(25,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between b[i][j] (26:2) and b[i][j-1] (26:2)
+
+      LOOP BEGIN at Calor.c(24,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b[i][j] (26:2) and b[i-1][j] (26:2)
+      LOOP END
+
+      LOOP BEGIN at Calor.c(24,5)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CalorVetorial(const int, const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(42,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at Calor.c(43,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at Calor.c(51,7)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at Calor.c(51,7)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MaxDif(const int, float (*)[*], float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(74,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between res (76:11) and res (76:11)
+
+   LOOP BEGIN at Calor.c(75,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between res (76:11) and res (76:11)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: Init..0(const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(13,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: Dump(const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(63,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between call:printf(const char *__restrict__, ...) (65:7) and call:printf(const char *__restrict__, ...) (66:5)
+
+   LOOP BEGIN at Calor.c(64,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: Init(const int, float (*)[*])
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Calor.c(13,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at Calor.c(14,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at Calor.c(14,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at Calor.c(14,5)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Calor.c(16,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================

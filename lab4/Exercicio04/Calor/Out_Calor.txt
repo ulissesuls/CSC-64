@@ -1,0 +1,3 @@
+MaxDif=0.000000e+00 para n=10000
+tempo escalar =46.995464
+tempo vetorial=20.959157
